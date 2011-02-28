@@ -29,7 +29,7 @@ return array(
 		'caching'      => false,
 		'profiling'    => false,
 	),
-
+ 
 	'production' => array(
 		'type'			=> 'mysql',
 		'connection'	=> array(
