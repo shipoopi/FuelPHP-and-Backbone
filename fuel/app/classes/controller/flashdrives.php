@@ -11,7 +11,6 @@ class Controller_Flashdrives extends Controller_Template {
 	public function action_view($id = null)
 	{
 		$data['flashdrives'] = Model_Flashdrives::find($id);
-		
 		$this->template->title = "Flashdrives";
 		$this->template->content = View::factory('flashdrives/view', $data);
 	}
@@ -85,12 +84,12 @@ class Controller_Flashdrives extends Controller_Template {
 
 		if ($flashdrives and $flashdrives->delete())
 		{
-			Session::set_flash('notice', 'Deleted ' . $flashdrives . ' #' . $id);
+			Session::set_flash('notice', 'Deleted drive #' . $id);
 		}
 
 		else
 		{
-			Session::set_flash('notice', 'Could not delete ' . $flashdrives . ' #' . $id);
+			Session::set_flash('notice', 'Could not delete drive #' . $id);
 		}
 
 		Output::redirect('flashdrives');
