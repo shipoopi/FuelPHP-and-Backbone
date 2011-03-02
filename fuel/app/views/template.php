@@ -11,7 +11,8 @@
 		#footer p { font-size: 14px; text-align: right; }
 		a { color: #000; }
 	</style>
-    <?php echo Asset::js('jquery-1.5.1.min.js'); ?>
+    <?php echo Asset::js('jquery-1.5.1.js'); ?>
+    <?php echo Asset::js('jquery.tmpl.js'); ?>
     <?php echo Asset::js('json2.js'); ?>
     <?php echo Asset::js('underscore.js'); ?>
     <?php echo Asset::js('backbone.js'); ?>
